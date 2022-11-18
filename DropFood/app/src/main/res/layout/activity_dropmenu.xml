@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functionpage.Dropmenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgGifRandom"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/randomfoodmenu"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop Menu"
+            android:textSize="40sp"
+            android:textColor="#384264"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 뭐 먹을지 고민될 때"
+            android:textSize="18sp"
+            android:textColor="#384264"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바로 시작해보세요!"
+            android:textSize="18sp"
+            android:textColor="#384264"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="시작"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/squareradius"
+                android:backgroundTint="#384264"
+                android:layout_marginRight="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/return_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="돌아가기"
+                android:textColor="#384264"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/squareradius"
+                android:backgroundTint="#F2F1F1"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

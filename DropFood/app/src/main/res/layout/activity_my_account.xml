@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".mainscr.MyAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUserProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_overlay="true"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#000"
+                android:src="@drawable/mealprofileimg"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#384264"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코드 : "
+                    android:textColor="#384264"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textUsercode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X89D1"
+                    android:textColor="#384264"
+                    android:textSize="20sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/copy_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:text="copy"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:background="@drawable/squareradiuslittle"
+                    android:backgroundTint="#384264"
+                    android:layout_marginLeft="7dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/reanswerbtn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/squareradius"
+                    android:backgroundTint="#4A3970"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/archive"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        app:civ_circle_background_color="#fff"
+                        app:civ_border_overlay="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="재설문"
+                        android:textSize="28sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="100dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recordbtn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/squareradius"
+                    android:backgroundTint="#403E7A"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/clipboard"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        app:civ_circle_background_color="#fff"
+                        app:civ_border_overlay="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기록"
+                        android:textSize="28sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="100dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/account_setting_btn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/squareradius"
+                    android:backgroundTint="#3E5C7A"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/usersetting"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        app:civ_circle_background_color="#fff"
+                        app:civ_border_overlay="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="계정 설정"
+                        android:textSize="28sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="100dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usercenterbtn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/squareradius"
+                    android:backgroundTint="#396370"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ic_callcenter"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        app:civ_circle_background_color="#fff"
+                        app:civ_border_overlay="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="고객센터"
+                        android:textSize="28sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="100dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

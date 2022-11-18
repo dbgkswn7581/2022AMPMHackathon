@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".mainscr.Commnuity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textCommnuity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commnuity"
+            android:textColor="#384264"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/FriGroup_layout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="150dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addfriend_btn"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="친구 추가"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="#88B05A"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/managefriend_btn"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="친구 관리"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="#5A63B0"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/makegroup_btn"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:text="그룹 생성"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="#B09274"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/FriGroup_layout"
+        android:layout_marginTop="150dp"
+
+        >
+
+        <ListView
+            android:id="@+id/listview_chatlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/chattinglist_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/FriGroup_layout"-->
+<!--        android:layout_marginTop="65dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat1btn_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="160px"-->
+<!--                android:layout_height="160px"-->
+<!--                android:src="@drawable/commnuity_group"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Group 1"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#384264"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="chat"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2 hours age"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat2btn_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="160px"-->
+<!--                android:layout_height="160px"-->
+<!--                android:src="@drawable/commnuity_group"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Group 2"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#384264"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="chat"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2 hours age"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat3btn_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="16dp"-->
+
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="160px"-->
+<!--                android:layout_height="160px"-->
+<!--                android:src="@drawable/commnuity_group"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Group 3"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#384264"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="chat"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2 hours age"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat4btn_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="16dp"-->
+
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="160px"-->
+<!--                android:layout_height="160px"-->
+<!--                android:src="@drawable/commnuity_group"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Group 4"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#384264"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="chat"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2 hours age"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/chat5btn_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="16dp"-->
+
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="160px"-->
+<!--                android:layout_height="160px"-->
+<!--                android:src="@drawable/commnuity_group"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Group 5"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#384264"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="chat"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2 hours age"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#515870"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

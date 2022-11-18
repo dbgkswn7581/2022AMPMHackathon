@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_base"
+    tools:context=".mainscr.Home">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textHelloUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Hello, hanwn!"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintVertical_bias="0.426"
+        >
+
+        <RelativeLayout
+            android:id="@+id/dropmenubtn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/squareradius"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop\n        Menu"
+                android:textColor="#384264"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dropmenuimage"
+                android:layout_marginStart="140dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mylocationbtn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/squareradiuslittle"
+            app:layout_constraintTop_toTopOf="@+id/dropmenubtn_layout"
+            android:layout_marginTop="140dp"
+            >
+
+            <TextView
+                android:id="@+id/textMyloaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 위치"
+                android:textSize="18sp"
+                android:textColor="#384264"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_loaction"
+                />
+
+            <ImageView
+                android:id="@+id/imgDownarrow"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:src="@drawable/downarrowic"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중구 남산공원길 125-54"
+                android:textSize="16sp"
+                android:textColor="#78809C"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="35dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/mylocationbtn_layout"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rankingbtn_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/squareradius"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="랭킹"
+                    android:textSize="22sp"
+                    android:textColor="#384264"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ranking"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="45dp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recordbtn_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/squareradius"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기록"
+                    android:textSize="22sp"
+                    android:textColor="#384264"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_record"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="65dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

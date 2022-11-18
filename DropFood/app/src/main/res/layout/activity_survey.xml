@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#384264"
+    tools:context=".sign.Survey">
+
+    <TextView
+        android:id="@+id/informationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="못 먹는 음식의 스위치를 활성화시켜주세요!"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/beefLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/informationText"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="소고기"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/beefSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/porkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/beefLayout"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="돼지고기"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/porkSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chickenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/porkLayout"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="닭고기"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/chickenSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/duckLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/chickenLayout"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="오리고기"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/duckSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sheepLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/duckLayout"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="양고기"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/sheepSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seafoodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sheepLayout"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="해산물"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            />
+
+        <Switch
+            android:id="@+id/seafoodSwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/seafoodLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/squareradius"
+        android:backgroundTint="#fdfdfd"
+        android:layout_marginTop="50dp"
+        android:text="완료"
+        android:textColor="#384264"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="계정">
+
+        <Preference
+            android:key="logout"
+            android:summary="로그인이 해제되며 초기화면으로 돌아갑니다."
+            android:title="로그아웃">
+        </Preference>
+
+        <EditTextPreference
+            android:key="modify_fullname"
+            android:dialogTitle="이름 변경"
+            android:dialogMessage="modify_fullname"
+            android:summary="회원가입 시 설정한 fullname을 변경할 수 있습니다."
+            android:title="이름 변경">
+        </EditTextPreference>
+
+        <Preference
+            android:key="modify_password"
+            android:dialogTitle="비밀번호 변경"
+            android:dialogMessage="modify_password"
+            android:summary="비밀번호를 변경할 수 있습니다."
+            android:title="비밀번호 변경">
+        </Preference>
+
+        <Preference
+            android:key="delete_account"
+            android:title="탈퇴">
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="프로그램 정보"
+        >
+
+        <Preference
+            android:key="termsandconditions"
+            android:title="이용약관">
+        </Preference>
+
+        <Preference
+            android:key="remove_account"
+            android:title="개인정보 보호정책">
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

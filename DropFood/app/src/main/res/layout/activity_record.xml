@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functionpage.Record">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기록"
+            android:textColor="#384264"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            />
+
+        <ListView
+            android:id="@+id/listview_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

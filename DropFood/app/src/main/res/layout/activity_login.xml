@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".sign.Login"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/signupscreen">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="25sp"
+        android:textColor="#384264"
+        android:text="Login"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="250dp"
+        android:id="@+id/textView"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="220dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textInputLayoutUsername"
+        android:hint="Username"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/poppinsmedium"
+        android:id="@+id/username"
+        android:drawableEnd="@drawable/ic_user"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textInputLayoutPassword"
+        tools:layout_editor_absoluteX="0dp"
+        android:hint="Password"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsername">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/poppinsmedium"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_password"
+        android:drawableEnd="@drawable/ic_password"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/progress"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+        android:visibility="gone"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:background="@drawable/buttonpatter2"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:text="LOGIN"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Don't you have an account? Sign Up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

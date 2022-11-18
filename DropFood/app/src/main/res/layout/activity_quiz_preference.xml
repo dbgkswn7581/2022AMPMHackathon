@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#384264"
+    tools:context=".functionpage.QuizPreference">
+
+    <LinearLayout
+        android:id="@+id/qnumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/question_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/qestion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선호하는 조리 방식을 선택하세요.\n(중복 선택 가능)"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/xkdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="탕"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:layout_weight="7"
+                android:gravity="center_horizontal"
+                />
+
+            <Switch
+                android:id="@+id/xkdSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wlaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/xkdLayout"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="찜"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:layout_weight="7"
+                android:gravity="center_horizontal"
+                />
+
+            <Switch
+                android:id="@+id/wlaSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rndlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/wlaLayout"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="구이"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:layout_weight="7"
+                android:gravity="center_horizontal"
+                />
+
+            <Switch
+                android:id="@+id/rndlSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xnlrlaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/rndlLayout"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="튀김"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:layout_weight="7"
+                android:gravity="center_horizontal"
+                />
+
+            <Switch
+                android:id="@+id/xnlrlaSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qhrdmaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/xnlrlaLayout"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="볶음"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:layout_weight="7"
+                android:gravity="center_horizontal"
+                />
+
+            <Switch
+                android:id="@+id/qhrdmaSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/qnumText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/squareradius"
+        android:backgroundTint="#fdfdfd"
+        android:layout_marginTop="50dp"
+        android:text="next"
+        android:textColor="#384264"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

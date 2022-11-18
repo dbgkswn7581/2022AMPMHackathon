@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functionpage.ResultFood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="물냉면"
+                android:textColor="#384264"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어떤가요?"
+                android:textColor="#384264"
+                android:textSize="24sp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/openmap"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="지도 열기"
+            android:textSize="15sp"
+            android:background="@drawable/squareradius"
+            android:backgroundTint="#384264"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/returnhome"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="home"
+            android:textSize="15sp"
+            android:background="@drawable/squareradius"
+            android:backgroundTint="#384264"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
